@@ -1,0 +1,195 @@
+.textSec-container {
+    padding: 0 24px;
+    position: relative;
+}
+
+
+
+
+
+.title {
+    margin: 40px 0;
+    color: #444444;
+}
+
+.title>h3 {
+    text-align: center;
+}
+
+.title>h3>span {
+    color: #C98572;
+}
+
+.cir1,
+.cir2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.cir1 {
+    background: #DFB6AA;
+    left: calc(100% - 164px);
+    top: -15px;
+}
+
+.cir2 {
+    left: calc(100% - 104px);
+    background: #C98572;
+    top: 5px;
+}
+
+
+
+.text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+
+
+.text2 {
+    flex-direction: row;
+}
+
+.text2 .sqrs {
+    margin-top: 20px;
+}
+
+.sqrs>img:nth-of-type(1) {
+    transform: rotate(90deg);
+}
+
+.sqr1,
+.sqr2 {
+    display: block;
+    border-radius: 6px;
+    border: 2px solid #FFFFFF;
+}
+
+.sqr1 {
+    width: 70px;
+    height: 70px;
+    background: #C98572;
+}
+
+.sqr2 {
+    width: 45px;
+    height: 45px;
+    background: #DFB6AA;
+    transform: translate(-105%, -125%);
+}
+
+
+.text2 .sqr2 {
+    transform: translate(60%, -125%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .cir1,
+    .cir2 {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    .cir1 {
+        left: calc(100% - 164px);
+        top: -15px;
+    }
+
+    .cir2 {
+        left: calc(100% - 144px);
+        top: 5px;
+    }
+
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .title>h3 {
+        width: 77%;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .text {
+        margin: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text>p {
+        width: 60%;
+        font-size: 18px;
+    }
+
+    .sqrs>img {
+        width: 45%;
+    }
+
+    .sqr1 {
+        width: 170px;
+        height: 170px;
+    }
+
+    .sqr2 {
+        width: 100px;
+        height: 100px;
+        transform: translate(-105%, -125%);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .textSec-container {
+        padding: 0 80px;
+    }
+
+    .title {
+        /* width: 80%; */
+    }
+
+    .title>h3 {
+        width: 60%;
+        /* width: auto; */
+    }
+
+    .cir1 {
+        left: calc(100% - 264px);
+        top: -15px;
+    }
+
+    .cir2 {
+        left: calc(100% - 244px);
+        top: 5px;
+    }
+
+
+    .text>p {
+        width: 60%;
+    }
+}

@@ -1,13 +1,56 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@font-face {
+  font-family: Vazir;
+  src: url('./font/Vazir.eot');
+  src: url('./font/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('./font/Vazir.woff') format('woff'),
+    url('./font/Vazir.ttf') format('truetype');
+  font-weight: normal;
 }
+
+
+
+@font-face {
+  font-family: Vazir;
+  src: url('./font/Vazir-Bold.eot');
+  src: url('./font/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./font/Vazir-Bold.woff') format('woff'),
+    url('./font/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('./font/Vazir-Light.eot');
+  src: url('./font/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('./font/Vazir-Light.woff') format('woff'),
+    url('./font/Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+
+.App {
+  direction: rtl;
+  font-family: Vazir;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {}

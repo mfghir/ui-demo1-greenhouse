@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import App from "./App";
+// import "./font/Vazir-Bold.eot";
+// import "./font/Vazir-Bold.woff";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// import "./font/Vazir-Light.eot";
+// import "./font/Vazir-Light.woff";
+
+// import "./font/Vazir-Medium.eot";
+// import "./font/Vazir-Medium.woff";
+
+// import "./font/Vazir-Thin.eot";
+// import "./font/Vazir-Thin.woff";
+
+// import "./font/Vazir.eot";
+// import "./font/Vazir.woff";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);

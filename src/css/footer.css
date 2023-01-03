@@ -1,0 +1,153 @@
+.footer-container {
+    width: 100%;
+    padding: 0 24px;
+    background: #C98572;
+
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer {
+    margin: 20px 0;
+}
+
+.footer>span {
+    border-bottom: 2px solid #444;
+}
+
+
+/* .footer>ul {} */
+
+.footer>ul>li {
+    font-size: 14px;
+}
+
+/* .footer>ul>li>svg {} */
+
+
+.footer1>ul>li {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer1>ul>li>svg {
+    margin-left: 15px;
+}
+
+.footer2>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footer2>ul>li {
+    padding: 5px;
+}
+
+
+.footer3>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.footer3>ul>li {
+    width: 45%;
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.footer3>ul>li>img {
+    margin-left: 10px;
+}
+
+
+.footer4 {
+    width: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer4>img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .footer-container {
+        justify-content: space-between;
+    }
+
+    .footer {
+        width: 45%;
+    }
+
+    .footer2>ul {
+        justify-content: normal;
+        align-items: normal;
+        flex-direction: column;
+
+    }
+
+    .footer2>ul>li {
+        padding: 0;
+        margin: 10px;
+    }
+
+    .footer4>img {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer-container {
+        padding: 0 80px;
+    }
+
+    .footer {
+        width: auto;
+    }
+
+    .footer>ul>li {
+        font-size: 16px;
+    }
+
+    .footer1 {
+        width: 30%;
+    }
+
+    .footer3>ul {
+        flex-direction: column;
+        justify-content: normal;
+        align-items: normal;
+    }
+
+    .footer3>ul>li {
+        width: auto;
+    }
+
+    .footer4 {
+        /* width: 20%; */
+        height: 210px;
+    }
+}

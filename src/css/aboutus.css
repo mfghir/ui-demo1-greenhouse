@@ -1,0 +1,161 @@
+.aboutus-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 24px;
+
+    background-image: url(../assets/dottedPhone.png);
+    background-size: cover;
+    margin-top: 60px;
+}
+
+
+
+.pinkCircleOne,
+.pinkCircleTwo,
+.pinkCircleThree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+
+.pinkCircleOne>p,
+.pinkCircleTwo>p,
+.pinkCircleThree>p {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+.pinkCircleOne>img,
+.pinkCircleTwo>img,
+.pinkCircleThree>img {
+    margin-top: 20px;
+    width: 70%;
+}
+
+
+
+
+
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px 0;
+}
+
+.banner>img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.banner>img:nth-of-type(2) {
+    display: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .aboutus-container {
+        background-image: url(../assets/DottedLines.png);
+        background-size: cover;
+    }
+
+    .pinkCircleOne,
+    .pinkCircleTwo,
+    .pinkCircleThree {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pinkCircleTwo {
+        flex-direction: row-reverse;
+    }
+
+
+    .pinkCircleOne>img,
+    .pinkCircleTwo>img,
+    .pinkCircleThree>img {
+        width: 25%;
+        margin-right: 20%;
+        /* padding-left: 40px; */
+    }
+
+    .pinkCircleTwo>img {
+        margin-right: 0;
+        margin-left: 20%;
+        padding-left: 0;
+        /* padding-right: 40px; */
+    }
+
+
+    .pinkCircleOne>p,
+    .pinkCircleTwo>p,
+    .pinkCircleThree>p {
+        width: 43%;
+        margin: 0;
+        /* padding-right: 40px; */
+    }
+
+    .pinkCircleTwo>p {
+        padding-right: 0;
+        /* padding-left: 40px; */
+    }
+
+
+
+    .banner {
+        /* padding: 0 40px; */
+    }
+
+    .banner>img:nth-of-type(1) {
+        display: none;
+    }
+
+    .banner>img:nth-of-type(2) {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .pinkCircleOne>img,
+    .pinkCircleTwo>img,
+    .pinkCircleThree>img {
+        padding-left: 80px;
+    }
+
+    .pinkCircleTwo>img {
+        padding-right: 80px;
+    }
+
+
+    .pinkCircleOne>p,
+    .pinkCircleTwo>p,
+    .pinkCircleThree>p {
+        padding-right: 80px;
+    }
+
+    .pinkCircleTwo>p {
+        padding-left: 80px;
+    }
+
+
+
+    .banner {
+        padding: 0 80px;
+    }
+
+    .banner>img:nth-of-type(2) {
+        border-radius: 16px;
+    }
+}

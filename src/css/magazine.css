@@ -1,0 +1,124 @@
+.magazine-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+
+    padding: 0 24px;
+    direction: ltr;
+}
+
+.magazine-container h3 {
+    color: #C98572;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.card {
+    width: 130px;
+    border: 2px solid #C98572;
+    height: 180px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 24px;
+    border-radius: 0px 16px;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.card>p {
+    /* left: 28px; */
+    top: 68px;
+    position: absolute;
+    color: #FFFFFF;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+.banner {
+    padding: 0 24px;
+}
+
+.banner>img:nth-of-type(2) {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .card {
+        width: 26%;
+        height: 240px;
+    }
+
+    .card>p {
+        top: 45%;
+    }
+
+
+    .banner {
+        padding: 0 24px;
+    }
+
+    .banner>img:nth-of-type(1) {
+        display: none;
+    }
+
+    .banner>img:nth-of-type(2) {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .magazine-container {
+        padding: 0 80px;
+    }
+
+    .card {
+        height: 20em;
+    }
+
+    .card>p {
+        font-size: 18px;
+    }
+
+    .banner {
+        padding: 0 80px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        height: 30em;
+    }
+}
